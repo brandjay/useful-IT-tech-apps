@@ -73,5 +73,15 @@ namespace QuikTek
             Clipboard.SetText(copymyIP);
             MessageBox.Show("Your IP is copied to clipboard.");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to shutdown the computer?", "Confirmation", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                
+                var psi = Process.Start("shutdown", "/s /t 0");
+            }
+        }
     }
 }
