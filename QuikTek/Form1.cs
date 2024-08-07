@@ -33,12 +33,7 @@ namespace QuikTek
             }
         }
         // this uses the underlying method used in the ipconfig command. It finds its own IP that has been assigned via DHCP
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            string textToCopy = "This ticket will remain open for 1 more day. If no reply this ticket will be considered reolved and closed";
-            Clipboard.SetText(textToCopy);
-            MessageBox.Show("Script copied");
-        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -79,8 +74,24 @@ namespace QuikTek
             DialogResult result = MessageBox.Show("Are you sure you want to shutdown the computer?", "Confirmation", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                
+
                 var psi = Process.Start("shutdown", "/s /t 0");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string url = textBox1.Text;
+                //Uri uri = new Uri(url);
+                IPAddress[] addresses = Dns.GetHostAddresses(url);
+
+                linkLabel1.Text = "IP Address: " + addresses[0].ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
     }
