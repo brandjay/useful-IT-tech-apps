@@ -88,6 +88,11 @@ namespace QuikTek
                 IPAddress[] addresses = Dns.GetHostAddresses(url);
 
                 linkLabel1.Text = "IP Address: " + addresses[0].ToString();
+                
+                string ipAddress = addresses[0].ToString();
+                Clipboard.SetText(ipAddress);
+                MessageBox.Show( ipAddress + "\n IP is copied to clipboard ");
+
             }
             catch (Exception ex)
             {
