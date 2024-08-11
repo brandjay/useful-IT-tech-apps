@@ -36,6 +36,8 @@
             textBox1 = new TextBox();
             button4 = new Button();
             linkLabel1 = new LinkLabel();
+            ProfileSnatch = new FolderBrowserDialog();
+            button1 = new Button();
             SuspendLayout();
             // 
             // control
@@ -110,12 +112,23 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.BackColor = SystemColors.ActiveCaptionText;
-            linkLabel1.Location = new Point(642, 56);
+            linkLabel1.Location = new Point(467, 53);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(85, 20);
             linkLabel1.TabIndex = 8;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Address is...";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.RoyalBlue;
+            button1.Location = new Point(12, 148);
+            button1.Name = "button1";
+            button1.Size = new Size(254, 29);
+            button1.TabIndex = 9;
+            button1.Text = "Zip Folder ";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // Form1
             // 
@@ -123,6 +136,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
             ClientSize = new Size(961, 450);
+            Controls.Add(button1);
             Controls.Add(linkLabel1);
             Controls.Add(button4);
             Controls.Add(textBox1);
@@ -142,11 +156,13 @@
         private Button control;
         private Button restartbtn;
         private Button sysinfo;
-        private Button button1;
+        //  private Button button1;
         private Button button2;
         private Button button3;
         private TextBox textBox1;
         private Button button4;
         private LinkLabel linkLabel1;
+        private FolderBrowserDialog ProfileSnatch;
+        private Button button1;
     }
 }
