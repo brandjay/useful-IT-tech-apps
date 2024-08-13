@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brand\\OneDrive\\Desktop\\useful-IT-tech-apps\\QuikTek\\QuikTek.csproj": {}
+    "C:\\Users\\brand\\OneDrive\\Desktop\\DevLabs\\useful-IT-tech-apps\\QuikTek\\QuikTek.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brand\\OneDrive\\Desktop\\useful-IT-tech-apps\\QuikTek\\QuikTek.csproj": {
+    "C:\\Users\\brand\\OneDrive\\Desktop\\DevLabs\\useful-IT-tech-apps\\QuikTek\\QuikTek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\OneDrive\\Desktop\\useful-IT-tech-apps\\QuikTek\\QuikTek.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\OneDrive\\Desktop\\DevLabs\\useful-IT-tech-apps\\QuikTek\\QuikTek.csproj",
         "projectName": "QuikTek",
-        "projectPath": "C:\\Users\\brand\\OneDrive\\Desktop\\useful-IT-tech-apps\\QuikTek\\QuikTek.csproj",
+        "projectPath": "C:\\Users\\brand\\OneDrive\\Desktop\\DevLabs\\useful-IT-tech-apps\\QuikTek\\QuikTek.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\OneDrive\\Desktop\\useful-IT-tech-apps\\QuikTek\\obj\\",
+        "outputPath": "C:\\Users\\brand\\OneDrive\\Desktop\\DevLabs\\useful-IT-tech-apps\\QuikTek\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
